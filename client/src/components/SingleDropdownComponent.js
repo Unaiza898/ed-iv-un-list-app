@@ -8,10 +8,10 @@ function SingleDropdownComponent({title, desc}) {
           <ul className="dropdown-menu dropdown-mega-menu-block bg-dark p-5" aria-labelledby="mega-menu">
             <div className="row" >
             <li className="col-lg-3 col-md-3">
-                <h3 className="text-white">Title Menu One</h3>
+                {/* <h3 className="text-white">Title Menu One</h3> */}
                 <ul>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item text-white bg-transparent " href="#"><u>Francais</u></a></li>
+                    <li><a className="dropdown-item text-white bg-transparent " href="#"><u></u></a></li>
                     <li><a className="dropdown-item text-white bg-transparent " href="#"><u>Francais</u></a></li>
                     <li><a className="dropdown-item text-white bg-transparent " href="#"><u>Francais</u></a></li>
                     <li><a className="dropdown-item text-white bg-transparent " href="#"><u>Francais</u></a></li>  
@@ -22,7 +22,7 @@ function SingleDropdownComponent({title, desc}) {
                 </ul>
             </li>
             <li className="col-lg-3 col-md-3">
-                <h3 className="text-white">Title Menu Two</h3>
+                <h3 className="text-white" href = "./">JOb</h3>
                 <ul>
                     <li><hr className="dropdown-divider" /></li>
                     <li><a className="dropdown-item text-white bg-transparent " href="#"><u>Francais</u></a></li>
