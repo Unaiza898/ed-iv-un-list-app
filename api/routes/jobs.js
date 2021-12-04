@@ -1,6 +1,6 @@
 const express = require('express');
 const router = require('express').Router(); 
-const db = require('../config/database');
+const db = require('../config/server/database');
 const jobs = require('../models/jobs');
 // get a job list
 router.get('/', (req,res) => 
