@@ -59,6 +59,11 @@ npm start
 - api-backend will launch at: http://localhost:8080
 - react-client will launch at: http://localhost:3000
 
+
+// seeding 
+cd api
+npx sequelize-cli db:seed:all
+
 ## Project Structure
 
 <pre>
