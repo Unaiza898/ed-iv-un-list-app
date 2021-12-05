@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../models');
+
+
 const {User} = db;
 
 // This is a simple example for providing basic CRUD routes for
