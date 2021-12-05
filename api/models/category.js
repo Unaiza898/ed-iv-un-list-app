@@ -12,11 +12,11 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty: true,
       },
       primaryKey: true
-    },
-
+    }
   }, {
     sequelize,
-    modelName: 'category'
+    modelName: 'category',
+    timestamps: false
   });
 
   Category.associate = (models) => {

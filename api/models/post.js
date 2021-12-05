@@ -13,11 +13,11 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true
     },
     userid:{
-      type: DataTypes.INTEGER,
-      references: {
-        model: "user",
-        key: "userid"
-    }
+      type: DataTypes.INTEGER
+    //   references: {
+    //     model: "user",
+    //     key: "userid"
+    // }
   },
   title:{
       type: DataTypes.STRING,
@@ -41,11 +41,12 @@ module.exports = (sequelize, DataTypes) => {
     validate: {
       len: [3, 250],
       notEmpty: true,
-    },
-    references: {
-      model: "category",
-      key: "id"
-  }
+    }
+  //   },
+  //   references: {
+  //     model: "category",
+  //     key: "id"
+  // }
   },
   price:{
     type: DataTypes.DOUBLE
@@ -78,6 +79,11 @@ module.exports = (sequelize, DataTypes) => {
 
   Post.associate = (models) => {
     // associations can be defined here
+    // Post.belongsTo(models.user,{
+    //   foreignKey:{
+    //     name: 'userid'
+    //   }
+    // });
   };
 
   return Post;
