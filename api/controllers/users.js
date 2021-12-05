@@ -15,7 +15,6 @@ const {User} = db;
 // explore other patterns to reduce code duplication.
 // TODO: Can you spot where we have some duplication below?
 
-
 router.get('/', (req,res) => {
   User.findAll({})
     .then(users => res.json(users));

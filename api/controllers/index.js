@@ -14,5 +14,4 @@ router.use('/categories', categoriesController);
 router.use('/users', usersController);
 router.use('/application-configuration', appConfigController);
 
-
 module.exports = router;
